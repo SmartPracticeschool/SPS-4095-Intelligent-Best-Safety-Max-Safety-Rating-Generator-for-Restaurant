@@ -21,8 +21,8 @@ class VideoCamera(object):
         is_success, im_buf_arr = cv2.imencode(".jpg", image)
         image1 = im_buf_arr.tobytes()
         client=boto3.client('rekognition',
-                        aws_access_key_id="AKIAZRVZ2MPGWYFJOMFO",
-                        aws_secret_access_key="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",
+                        aws_access_key_id="XXXXXXXXXXXXXXXXXXXXX",
+                        aws_secret_access_key="XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 
                         region_name='us-east-1')
         response = client.detect_custom_labels(
